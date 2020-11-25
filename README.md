@@ -1,5 +1,5 @@
 # spring_servlet
-这是一个手写代码实现简易版 springmvc 及 spring(ioc + aop) 的项目，核心就是反射技术。
+这是一个手写代码实现简易版 springmvc 及 spring ioc 容器的项目，核心就是反射技术。
 
 # com.dogsky.servletmvc 包下是手写 springmvc 部分
 
@@ -13,9 +13,3 @@ http://127.0.0.1:8080/spring_servlet/test1
 此部分通过 1、通过反射找出注解定义的部分 2、初始化类的 bean 3、对 bean 的属性进行初始化 等实现简易版 ioc 功能
 
 直接运行 com.dogsky.spring1.ioc.test.IocTest 就能输出结果
-
-# com.dogsky.spring1.aop 包下是手写 spring 的 aop 功能部分
-
-此部分主要是使用了 JDk 的动态代理（spring 的 aop 通过反射及代理实现, 但这里并有真正体现 aop）
-
-直接运行 com.dogsky.spring1.aop.test.AopTest 就能输出结果
