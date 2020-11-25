@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>spring-servlet</groupId>
+  <artifactId>spring_servlet</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.alibaba</groupId>
+  		<artifactId>fastjson</artifactId>
+  		<version>1.2.9</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>dom4j</groupId>
+	    <artifactId>dom4j</artifactId>
+	    <version>1.6.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>jaxen</groupId>
+	    <artifactId>jaxen</artifactId>
+	    <version>1.2.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>servlet-api</artifactId>
+	    <version>2.5</version>
+	    <!-- tomcat中有此包, 如果不指定范围会报错 cannot be cast to javax.servlet.Servlet -->
+	    <scope>provided</scope>
+	</dependency>
+	
+  </dependencies>
+  <build>
+	<plugins>
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+		</plugin>
+	</plugins>
+  </build>
+</project>
